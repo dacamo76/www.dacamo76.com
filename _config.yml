@@ -2,12 +2,14 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://yoursite.com
-title: My Octopress Blog
-subtitle: A blogging framework for hackers.
-author: Your Name
+url: http://www.dacamo76.com
+title: Attaining Vision
+subtitle: Developer notebook of Daniel Alberto Cañas
+author: Daniel Alberto Cañas
 simple_search: http://google.com/search
-description:
+description: Daniel's web log
+
+images : http://s3.amazonaws.com/images.dacamo76.com
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
@@ -33,7 +35,7 @@ destination: public
 plugins: plugins
 code_dir: downloads/code
 category_dir: blog/categories
-markdown: rdiscount
+markdown: kramdown
 pygments: false # default python pygments have been replaced by pygments.rb
 
 paginate: 10          # Posts per page on the blog index
@@ -64,7 +66,7 @@ github_show_profile_link: true
 github_skip_forks: true
 
 # Twitter
-twitter_user:
+twitter_user: dacamo76
 twitter_tweet_count: 4
 twitter_show_replies: false
 twitter_follow_button: true
@@ -89,7 +91,7 @@ delicious_user:
 delicious_count: 3
 
 # Disqus Comments
-disqus_short_name:
+disqus_short_name: dacamo76
 disqus_show_comment_count: false
 
 # Google Analytics
