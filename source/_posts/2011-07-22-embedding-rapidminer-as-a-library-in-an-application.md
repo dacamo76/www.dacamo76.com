@@ -1,7 +1,7 @@
 ---
 layout: post
-tags : [data mining, open source , rapidminer, java]
-categories: rapidminer, java, open source, data mining
+tags : [data mining, open source, rapidminer, java]
+categories: [rapidminer, java, open source, data mining]
 comments: true
 ---
 
