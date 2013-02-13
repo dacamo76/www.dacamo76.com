@@ -30,6 +30,8 @@ NumPy and SciPy each have their dependencies which are listed below.
     * Numpy
     * Complete LAPACK library
 
+<!-- more -->
+
 Here is where it got confusing for me. NumPy optionally requires (very strongly recommended from what I can tell) BLAS or LAPACK.
 SciPy requires LAPACK, but NumPy does not (If BLAS is installed).
 By deduction, it seems the sensible choice is to install LAPACK, which both can use, and we're all set.
