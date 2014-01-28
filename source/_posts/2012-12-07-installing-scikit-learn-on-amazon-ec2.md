@@ -6,6 +6,8 @@ categories: [scikit-learn, python, numpy, scipy, ec2]
 tags: [python, scipy, numpy. scikit-learn, ec2]
 ---
 
+*(Jan 28 2014): Updated installation to conform to the recommended virtualenv source install.*
+
 I've been using [scikit-learn](http://scikit-learn.org) over the past few weeks on a project.
 While developing and analyzing the data I just needed to get work done without the hassle of a complex installation, the Ubuntu image on EC2 provided just that.
 Now that the project is ready to be deployed, I need to install scikit-learn on the default Amazon Linux AMI.
@@ -45,7 +47,7 @@ For now, let's just get down to installing all these dependencies and start usin
 The really daring can run the [full install script](https://gist.github.com/dacamo76/4780765) directly from the gist
 
 ```
-curl https://gist.github.com/dacamo76/4780765/raw/5988517f19cf30be0ed01c1514498fab7619ee9d/scikit-learn-install.sh | sh
+curl https://gist.github.com/dacamo76/4780765/raw/36acfb10aba554a7738d2fea11d15a31dd8f3a0d/scikit-learn-install.sh | sh
 ```
 
 I'll continue with an explanation of each step in the gist.
@@ -60,12 +62,12 @@ Next install virtualenv and create a virtual python install to keep all our pack
 
 
 ```
-[ec2-user@ip-10-99-17-223 ~]$ wget https://raw.github.com/pypa/virtualenv/master/virtualenv.py
-[ec2-user@ip-10-99-17-223 ~]$ python27 virtualenv.py sk-learn
+[ec2-user@ip-10-99-17-223 ~]$ wget https://pypi.python.org/packages/source/v/virtualenv/virtualenv-1.11.2.tar.gz
+[ec2-user@ip-10-99-17-223 ~]$ tar xzf virtualenv-1.11.2.tar.gz
+[ec2-user@ip-10-99-17-223 ~]$ python27 virtualenv-1.11.2/virtualenv.py sk-learn
 New python executable in sk-learn/bin/python27
 Also creating executable in sk-learn/bin/python
-Installing setuptools............................done.
-Installing pip.....................done.
+Installing setuptools, pip...done.
 ```
 Activate the new Python 2.7 virtualenv.
 
