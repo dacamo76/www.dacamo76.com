@@ -2,6 +2,7 @@
 layout: post
 tags : [data mining, open source, rapidminer, java]
 categories: [rapidminer, java, open source, data mining]
+date: 2011-07-22
 comments: true
 ---
 
